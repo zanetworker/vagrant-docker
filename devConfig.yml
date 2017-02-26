@@ -1,0 +1,41 @@
+---
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "docker1"
+  nics:
+    - type: "private_network"
+      ip_addr: "10.10.10.101"
+    
+    - type: "private_network"
+      ip_addr: "192.168.50.101"
+  ram: "1000"
+  vcpu: "2"
+
+
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "docker2"
+  nics:
+    - type: "private_network"
+      ip_addr: "10.10.10.102"
+  ram: "1000"
+  vcpu: "2"
+
+
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "docker3"
+  nics:
+    - type: "private_network"
+      ip_addr: "192.168.50.102"
+  ram: "1000"
+  vcpu: "2"
+
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "docker4"
+  nics:
+    - type: "private_network"
+      ip_addr: "192.168.50.103"
+  ram: "1000"
+  vcpu: "2"

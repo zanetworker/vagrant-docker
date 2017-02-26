@@ -1,0 +1,4 @@
+provision.yaml
+ansible.cfg
+vars.yaml
+*.vagrant
